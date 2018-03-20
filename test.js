@@ -1,5 +1,5 @@
 console.log("hi");
-WebAssembly.instantiateStreaming(fetch('test.wasm'), {})
+WebAssembly.instantiateStreaming(fetch('/main.wasm'))
     .then(obj => {
 	// Call an exported function:
 	console.log("instantiated");
